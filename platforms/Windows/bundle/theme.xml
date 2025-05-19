@@ -9,7 +9,7 @@
     <Font Id="2" Height="-18" Weight="500" Foreground="graytext">Segoe UI</Font>
     <Font Id="3" Height="-12" Weight="500" Foreground="windowtext" Background="window">Segoe UI</Font>
 
-    <Window Width="614" Height="456" HexStyle="100a0000" FontId="0" Caption="#(loc.Caption)">
+    <Window Width="614" Height="496" HexStyle="100a0000" FontId="0" Caption="#(loc.Caption)">
         <ImageControl X="0" Y="0" Width="165" Height="456" ImageFile="swift_side.png"/>
         <Label X="176" Y="11" Width="-11" Height="32" FontId="1" DisablePrefix="yes">#(loc.Title)</Label>
 
@@ -73,7 +73,9 @@
             <Checkbox Name="OptionsInstallAndroidSDKAMD64" X="194" Y="363" Width="-11" Height="17" TabStop="yes" FontId="3" EnableCondition="OptionsInstallAndroidPlatform">#(loc.Sdk_ProductName_Android_amd64)</Checkbox>
             <Checkbox Name="OptionsInstallAndroidSDKARM" X="194" Y="381" Width="-11" Height="17" TabStop="yes" FontId="3" EnableCondition="OptionsInstallAndroidPlatform">#(loc.Sdk_ProductName_Android_armv7)</Checkbox>
             <Checkbox Name="OptionsInstallAndroidSDKX86" X="194" Y="399" Width="-11" Height="17" TabStop="yes" FontId="3" EnableCondition="OptionsInstallAndroidPlatform">#(loc.Sdk_ProductName_Android_x86)</Checkbox>
-
+            <Checkbox Name="OptionsInstallAssertsToolchain" X="176" Y="417" Width="-11" Height="17" TabStop="yes" FontId="3" EnableCondition="0">#(loc.Asserts_Toolchain_ProductName)</Checkbox>
+            <Checkbox Name="OptionsInstallNoAssertsToolchain" X="176" Y="435" Width="-11" Height="17" TabStop="yes" FontId="3" EnableCondition="1">#(loc.NoAsserts_Toolchain_ProductName)</Checkbox>
+            
             <Button Name="OptionsOkButton" X="-91" Y="-11" Width="75" Height="23" TabStop="yes" FontId="0">
                 <Text>#(loc.OptionsOkButton)</Text>
                 <ChangePageAction Page="Install" />
