@@ -82,7 +82,7 @@
         <util:RemoveFolderEx Property="RUNTIMESVERSIONED" Condition="RUNTIMESVERSIONED" />
       </Component>
 
-      <Component Id="VersionedDirectoryCleanupToolchains">
+      <Component Id="VersionedDirectoryCleanupToolchains_asserts">
         <RegistryValue Root="HKCU" Key="SOFTWARE\!(loc.ManufacturerName)\Installer\$(ProductVersion)\!(bind.Property.UpgradeCode)" Name="ToolchainsVersionedAsserts" Value="[ToolchainsVersionedAsserts]" />
         <util:RemoveFolderEx Property="TOOLCHAINSVERSIONEDASSERTS" Condition="TOOLCHAINSVERSIONEDASSERTS" />
       </Component>
