@@ -537,7 +537,7 @@
     </ComponentGroup>
 
     <ComponentGroup Id="Configuration">
-      <Component Directory="ToolchainVersionedAsserts">
+      <Component Directory="$(ToolchainVersionedVariantDirectory)">
         <File Source="$(ToolchainRoot)\ToolchainInfo.plist" />
       </Component>
     </ComponentGroup>
